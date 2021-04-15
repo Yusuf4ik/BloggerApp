@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostActivity">
+
+    <EditText
+        android:id="@+id/postTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Post Title"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/postDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <EditText
+        android:id="@+id/postDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Post Description"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/postAuthName"
+        app:layout_constraintEnd_toEndOf="@id/postTitle"
+        app:layout_constraintStart_toStartOf="@id/postTitle"
+        app:layout_constraintTop_toBottomOf="@id/postTitle" />
+
+    <EditText
+        android:id="@+id/postAuthName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Post author's name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/postTags"
+        app:layout_constraintEnd_toEndOf="@id/postDescription"
+        app:layout_constraintStart_toStartOf="@id/postDescription"
+        app:layout_constraintTop_toBottomOf="@id/postDescription" />
+
+    <EditText
+        android:id="@+id/postTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Post Tags"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/addPostButton"
+        app:layout_constraintEnd_toEndOf="@id/postAuthName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/postAuthName"
+        app:layout_constraintTop_toBottomOf="@id/postAuthName" />
+
+    <Button
+        android:id="@+id/addPostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="296dp"
+        android:text="add post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/postTags"
+        app:layout_constraintStart_toStartOf="@id/postTags" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Add Post"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
